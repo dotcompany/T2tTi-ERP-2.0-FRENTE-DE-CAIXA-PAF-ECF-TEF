@@ -1,0 +1,6 @@
+VCB|E1XCAIXA 001V188C275D02022013030347|CAIXA 001|188|1|null|null|null|null|null|00000000000000000001|null|275|188|null|null|45.8|null|null|null|null|null|null|null|0.0|null|null|null|null|null|null|null|null|null|null|F|null|null|null|null|null|
+VDT|E1XCAIXA 001V188C275D02022013030347I292|1|1.0|null|CAIXA 001|292|1|1|188|null|0000000000259|null|null|5102|null|1.0|12.8|12.8|null|12.8|0.0|0.0|null|null|null|null|null|null|null|null|null|null|0.0|0.0|I1|null|N|null|null|null|null|
+VDT|E1XCAIXA 001V188C275D02022013030347I293|2|1.0|null|CAIXA 001|293|1|2|188|null|0000000002520|null|null|5102|null|1.0|22.3|22.3|null|22.3|0.0|0.0|null|null|null|null|null|null|null|null|null|null|0.0|0.0|I1|null|N|null|null|null|null|
+VDT|E1XCAIXA 001V188C275D02022013030347I294|3|1.0|null|CAIXA 001|294|1|3|188|null|0000000002541|null|null|5102|null|1.0|10.7|10.7|null|10.7|0.0|0.0|null|null|null|null|null|null|null|null|null|null|0.0|0.0|I1|null|N|null|null|null|null|
+TTP|E1XCAIXA 001V188C275D02022013030347T188P1|CAIXA 001|188|1|188|1|null|null|null|null|20.0||N||null|null|null|
+TTP|E1XCAIXA 001V188C275D02022013030347T189P2|CAIXA 001|189|1|188|2|null|null|null|null|50.0||N||null|null|null|

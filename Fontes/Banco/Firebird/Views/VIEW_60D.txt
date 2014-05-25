@@ -1,0 +1,32 @@
+CREATE OR ALTER VIEW VIEW_60D
+(
+ GTIN,
+ SERIE,
+ DATA_EMISSAO,
+ ID,
+ ECF_ICMS_ST,
+ SOMA_QUANTIDADE,
+ SOMA_ITEM,
+ SOMA_BASE_ICMS,
+ SOMA_ICMS 
+) AS 
+
+select VD.GTIN,
+       i.SERIE,
+       vc.DATA_VENDA,
+       m.ID,
+       VD.ECF_ICMS_ST,
+       sum(vd.QUANTIDADE) AS SOMA_QUANTIDADE,
+       sum(vd.TOTAL_ITEM) AS SOMA_ITEM,
+       sum(vd.BASE_ICMS) AS SOMA_BASE_ICMS,
+       sum(vd.ICMS) AS SOMA_ICMS
+
+from ecf_venda_cabecalho vc
+left join ecf_venda_detalhe vd on vd.ID_ECF_VENDA_CABECALHO = vc.ID
+left join ecf_movimento m on vc.ID_ECF_MOVIMENTO = m.ID
+left join ecf_impressora i on m.ID_ECF_IMPRESSORA = i.ID
+where VD.CANCELADO = 'N'
+group by VD.GTIN,i.SERIE,vc.DATA_VENDA,m.ID,VD.ECF_ICMS_ST
+
+;
+

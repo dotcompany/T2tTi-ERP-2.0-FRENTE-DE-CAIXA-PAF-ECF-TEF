@@ -1,0 +1,10 @@
+DELIMITER $$
+
+CREATE
+    TRIGGER retaguarda.IncHashDavDetalhe BEFORE UPDATE
+    ON retaguarda.dav_detalhe
+    FOR EACH ROW BEGIN
+	SET NEW.HASH_INCREMENTO = NEW.HASH_INCREMENTO + 1;
+    END$$
+
+DELIMITER ;

@@ -1,0 +1,10 @@
+DELIMITER $$
+
+CREATE
+    TRIGGER pafecf.IncTotalTipoPgto BEFORE UPDATE
+    ON pafecf.ecf_total_tipo_pgto
+    FOR EACH ROW BEGIN
+	SET NEW.HASH_INCREMENTO = NEW.HASH_INCREMENTO + 1;
+    END$$
+
+DELIMITER ;

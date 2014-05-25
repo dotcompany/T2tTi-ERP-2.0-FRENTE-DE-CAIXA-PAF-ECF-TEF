@@ -1,0 +1,24 @@
+CREATE OR ALTER VIEW VIEW_C490
+(
+ CST,
+ CFOP,
+ TAXA_ICMS,
+ DATA_VENDA,
+ SOMA_ITEM,
+ SOMA_BASE_ICMS,
+ SOMA_ICMS 
+) AS 
+
+select vd.CST,vd.CFOP,
+       vd.TAXA_ICMS,
+       vc.DATA_VENDA,
+       COALESCE(sum(vd.VALOR_TOTAL),0) AS SOMA_ITEM,
+       COALESCE(sum(vd.BASE_ICMS),0) AS SOMA_BASE_ICMS,
+       COALESCE(sum(vd.ICMS),0) AS SOMA_ICMS
+from ECF_VENDA_DETALHE vd
+INNER JOIN ECF_VENDA_CABECALHO vc ON (vd.ID_ECF_VENDA_CABECALHO = vc.ID)
+where vd.cancelado='N'
+group by vd.CST,vd.CFOP,vd.TAXA_ICMS,vc.Data_venda
+
+;
+

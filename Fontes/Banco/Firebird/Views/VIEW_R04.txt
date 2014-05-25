@@ -1,0 +1,51 @@
+CREATE OR ALTER VIEW VIEW_R04
+(
+ VCID,
+ ID_ECF_MOVIMENTO,
+ SERIE_ECF,
+ CCF,
+ COO,
+ DATA_VENDA,
+ VALOR_VENDA,
+ HASH_TRIPA,
+ HASH_INCREMENTO,
+ DESCONTO,
+ ACRESCIMO,
+ VALOR_FINAL,
+ STATUS_VENDA,
+ CUPOM_CANCELADO,
+ NOME_CLIENTE,
+ PIS,
+ COFINS,
+ CPF_CNPJ_CLIENTE,
+ MID,
+ ID_ECF_IMPRESSORA,
+ ID_ECF_OPERADOR 
+) AS 
+
+select    vc.ID AS VCID,
+          vc.ID_ECF_MOVIMENTO,
+          VC.SERIE_ECF,
+          vc.CCF,
+          vc.COO,
+          vc.DATA_VENDA,
+          vc.VALOR_VENDA,
+          vc.HASH_TRIPA,
+          vc.hash_incremento,
+          vc.DESCONTO,
+          vc.ACRESCIMO,
+          vc.VALOR_FINAL,
+          vc.STATUS_VENDA,
+          VC.CUPOM_CANCELADO, 
+          vc.NOME_CLIENTE,
+          vc.PIS,
+          vc.COFINS,
+          vc.CPF_CNPJ_CLIENTE,
+          m.ID AS MID,
+          m.ID_ECF_IMPRESSORA,
+          m.ID_ECF_OPERADOR
+ FROM ecf_venda_cabecalho vc
+   LEFT  JOIN ecf_movimento m ON ((vc.ID_ECF_MOVIMENTO = m.ID) AND (vc.STATUS_VENDA <> 'P'))
+
+;
+

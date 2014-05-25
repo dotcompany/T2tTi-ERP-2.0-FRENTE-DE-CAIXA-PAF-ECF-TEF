@@ -1,0 +1,4 @@
+VCB|'E1XCAIXA 001V230C560D30012014115515'|'CAIXA 001'|'230'|'1'|'null'|'null'|'null'|'null'|'null'|'00000000000000000001'|'null'|'560'|'354'|'null'|'null'|'210.0'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'0.0'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'F'|'null'|'null'|'null'|'null'|'null'|
+VDT|'E1XCAIXA 001V230C560D30012014115515I364'|'2'|'6.0'|'null'|'CAIXA 001'|'364'|'1'|'2'|'230'|'null'|'0000000002520'|'null'|'null'|'5102'|'null'|'6.0'|'35.0'|'210.0'|'null'|'210.0'|'0.0'|'0.0'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'null'|'0.0'|'0.0'|'I1'|'null'|'N'|'null'|'null'|'null'|'null'|
+TTP|'E1XCAIXA 001V230C560D30012014115515T215P1'|'CAIXA 001'|'215'|'1'|'230'|'1'|'null'|'null'|'null'|'null'|'200.0'|''|'N'|''|'null'|'null'|'null'|
+TTP|'E1XCAIXA 001V230C560D30012014115515T216P2'|'CAIXA 001'|'216'|'1'|'230'|'2'|'null'|'null'|'null'|'null'|'50.0'|''|'N'|''|'null'|'null'|'null'|

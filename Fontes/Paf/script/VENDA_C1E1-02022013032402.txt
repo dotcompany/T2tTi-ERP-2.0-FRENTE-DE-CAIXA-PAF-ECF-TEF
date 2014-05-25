@@ -1,0 +1,3 @@
+VCB|E1XCAIXA 001V189C276D02022013032402|CAIXA 001|189|1|null|null|null|null|null|00000000000000000001|null|276|189|null|null|12.8|null|null|null|null|null|null|null|0.0|null|null|null|null|null|null|null|null|null|null|F|null|null|null|null|null|
+VDT|E1XCAIXA 001V189C276D02022013032402I295|1|1.0|null|CAIXA 001|295|1|1|189|null|0000000000259|null|null|5102|null|1.0|12.8|12.8|null|12.8|0.0|0.0|null|null|null|null|null|null|null|null|null|null|0.0|0.0|I1|null|N|null|null|null|null|
+TTP|E1XCAIXA 001V189C276D02022013032402T190P1|CAIXA 001|190|1|189|1|null|null|null|null|50.0||N||null|null|null|
